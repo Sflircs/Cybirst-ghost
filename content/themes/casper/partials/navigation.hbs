@@ -1,0 +1,33 @@
+<header class="gh-head">
+    <nav class="gh-navbar inner">
+        <div class="gh-navbar-left">
+            <a href="/fr/" class="gh-nav-logo gh-navbar-item">
+                <img  src="{{asset "images/cybirst-logo.svg"}}"alt="{{@blog.title}}" height="40"/>
+                <b style="margin-left: 10px; font-weight: 800; font-size: 18px;">Cybirst</b>
+            </a>
+            {{#foreach navigation}}
+                <a class="gh-navbar-item" href="{{url absolute="true"}}">{{label}}</a>
+            {{/foreach}}
+            <div class="gh-drop gh-more-drop">
+                <div class="gh-drop-trigger gh-navbar-item">
+                    <span>More <svg viewBox="0 0 26 17" xmlns="http://www.w3.org/2000/svg"><path d="M1.469 2.18l11.5 13.143 11.5-13.143" stroke-width="3" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+                </div>
+                <ul class="gh-dropdown">
+                    <li><a href="/fr/journalism/">Journalism <span class="gh-badge">New</span></a></li>
+                    <li><a href="/fr/downloads/">Desktop App</a></li>
+                    <li><a href="/fr/about/">About</a></li>
+                    <li><a href="https://blog.ghost.org">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="gh-navbar-right">
+            <a href="/fr/developers/" class="gh-navbar-item">Developers</a>
+            <a class="gh-navbar-item" href="https://help.ghost.org/hc">Support</a>
+            {{#if @labs.subscribers}}
+                <a class="gh-navbar-btn gh-btn" href="{{@blog.url}}/subscribe/" id="signin-button"><span>Subscribe</span></a>
+            {{else}}
+                <a class="gh-navbar-btn gh-btn icon-feed" href="{{@blog.url}}/rss/" id="signin-button"><span>Subscribe</span></a>
+            {{/if}}
+        </div>
+    </nav>
+</header>

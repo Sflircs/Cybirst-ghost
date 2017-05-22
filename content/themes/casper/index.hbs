@@ -1,0 +1,153 @@
+{{!< default}}
+{{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
+<main class="gh-main" role="main">
+    <header class="gh-hero gh-hero-developers">
+        <div class="inner">
+            <div class="gh-header">
+                <h1>{{@blog.title}}</h1>
+
+                <p class="gh-subhead">{{@blog.description}}</p>
+
+                <a id="ghost-download" class="gh-btn gh-btn-green gh-developer-downloadbutton" href="https://github.com/TryGhost/Ghost/releases/download/0.11.9/Ghost-0.11.9.zip" data-version="0.11.9">
+                    <span>Make your life awesome</span>
+                </a>
+                <p class="gh-developer-download-description"><a href="https://dev.ghost.org/ghost-0-11-9/">What's new</a> | <a href="https://github.com/TryGhost/Ghost/releases">History</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section class="gh-section">
+        <div class="inner">
+            <header class="gh-section-head">
+            <h2>Trở thành nhà phát triển độc lập</h2>
+            <p>Bắt đầu bằng từ những điều cơ bản cho đến những thứ phức tạp</p>
+            </header>
+            <div class="gh-developer-tech">
+                <div class="gh-developer-tech-item">
+                    <img src="{{asset "images/chim_moi_no.svg"}}" width="180" height="180"/>
+                    <h5>Kiến thức cơ bản</h5>
+                    <p><a href="http://nodejs.org">Node.js</a> is the platform which powers Ghost. Being built on Chrome's JavaScript runtime makes it fast, scalable and incredibly efficient.</p>
+                </div>
+                <div class="gh-developer-tech-item">
+                    <img src="{{asset "images/chim_hieu_hoc.svg"}}" width="180" height="180"/>
+                    <h5>Lập trình nâng cao</h5>
+                    <p><a href="http://emberjs.com/">Ember.js</a> runs the clientside web application which makes up Ghost’s administrative area for smooth, slick user experience.</p>
+                </div>
+                <div class="gh-developer-tech-item">
+                    <img src="{{asset "images/chim_tung_canh.svg"}}" width="180" height="180"/>
+                    <h5>Tham gia phát triển sản phẩm thực tế</h5>
+                    <p><a href="http://handlebarsjs.com">Handlebars</a> is the powerful, logicless, semantic templating language which powers Ghost's themes. It's very easy to learn!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gh-section gh-developer-docs-section">
+        <div class="inner">
+            <header class="gh-section-head">
+                <h2>Full Developer Documentation</h2>
+            </header>
+            <div class="gh-developer-docs">
+                <a class="gh-developer-docs-item gh-developer-docs-setup" href="https://support.ghost.org/developers/">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.996 5.477l-.021-.102-.025-.086-.051-.075-.065-.081-.014-.018-6-5A.504.504 0 0 0 17.5 0h-11a.497.497 0 0 0-.32.116l-6 5-.015.018-.065.081-.05.074-.025.087-.021.101L0 5.5v16C0 22.878 1.121 24 2.5 24h19c1.379 0 2.5-1.122 2.5-2.5v-16l-.004-.023zM23 11H1V6h22v5zM1 12h22v5H1v-5zM6.681 1H17.32l4.799 4H1.881l4.8-4zM21.5 23h-19c-.827 0-1.5-.673-1.5-1.5V18h22v3.5c0 .827-.673 1.5-1.5 1.5z"></path><circle cx="14" cy="8.5" r="1"></circle><circle cx="17" cy="8.5" r="1"></circle><circle cx="20" cy="8.5" r="1"></circle><path d="M3.5 10C4.327 10 5 9.327 5 8.5S4.327 7 3.5 7 2 7.673 2 8.5 2.673 10 3.5 10zm0-2a.5.5 0 1 1-.002 1.002A.5.5 0 0 1 3.5 8z"></path><circle cx="14" cy="14.5" r="1"></circle><circle cx="17" cy="14.5" r="1"></circle><circle cx="20" cy="14.5" r="1"></circle><path d="M3.5 13c-.827 0-1.5.673-1.5 1.5S2.673 16 3.5 16 5 15.327 5 14.5 4.327 13 3.5 13zm0 2a.5.5 0 1 1 .002-1.002A.5.5 0 0 1 3.5 15z"></path><circle cx="14" cy="20.5" r="1"></circle><circle cx="17" cy="20.5" r="1"></circle><circle cx="20" cy="20.5" r="1"></circle><path d="M3.5 19c-.827 0-1.5.673-1.5 1.5S2.673 22 3.5 22 5 21.327 5 20.5 4.327 19 3.5 19zm0 2a.5.5 0 1 1 .002-1.002A.5.5 0 0 1 3.5 21z"></path></svg>
+    <h3>Setup</h3>
+    <p>Install/run guide</p>
+                </a>
+                <a class="gh-developer-docs-item gh-developer-docs-api" href="http://api.ghost.org/">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12.5c-.694 0-1.306.356-1.664.895l-2.705-1.118A4.467 4.467 0 0 0 18 10.5a4.456 4.456 0 0 0-.995-2.788l3.987-3.996c.296.176.639.284 1.008.284 1.103 0 2-.897 2-2 0-1.102-.897-2-2-2s-2 .898-2 2c0 .37.108.712.284 1.01l-3.986 3.994A4.459 4.459 0 0 0 13.499 6c-1.673 0-3.119.929-3.894 2.287L3.963 5.869C3.985 5.749 4 5.626 4 5.5c0-1.102-.898-2-2-2s-2 .898-2 2c0 1.103.897 2 2 2 .617 0 1.163-.287 1.53-.728l5.681 2.435c-.125.412-.212.84-.212 1.293 0 1.065.387 2.032 1.008 2.803l-6.997 6.98A1.986 1.986 0 0 0 2 20c-1.102 0-2 .898-2 2 0 1.103.897 2 2 2s2-.897 2-2c0-.37-.108-.712-.284-1.01l6.999-6.982a4.452 4.452 0 0 0 2.283.941v5.121c-.86.224-1.5 1-1.5 1.929 0 1.103.898 2 2 2 1.103 0 2-.897 2-2 0-.929-.64-1.705-1.5-1.929v-5.12a4.476 4.476 0 0 0 3.12-1.802l2.896 1.197L20 14.5c0 1.103.897 2 2 2s2-.897 2-2c0-1.102-.897-2-2-2zm-20-6a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM22 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zM2 23a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm12.499-1a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1-8c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5zM22 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+    <h3>API <span class="gh-badge">New</span></h3>
+    <p>Connect to things</p>
+                </a>
+                <a class="gh-developer-docs-item gh-developer-docs-themes" href="http://themes.ghost.org/">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.485 4.514C18.219 2.248 15.205 1 12 1S5.781 2.248 3.515 4.514c-4.679 4.679-4.679 12.292 0 16.972.944.944 2.591.945 3.537 0a2.506 2.506 0 0 0-.001-3.536.495.495 0 0 1 .001-.706.514.514 0 0 1 .707 0L12 21.486a5.958 5.958 0 0 0 4.243 1.758 5.962 5.962 0 0 0 4.242-1.758c4.68-4.679 4.68-12.293 0-16.972zm-.707 16.265a4.964 4.964 0 0 1-3.535 1.465 4.967 4.967 0 0 1-3.536-1.465l-4.242-4.243c-.283-.283-.66-.439-1.061-.439s-.778.156-1.061.44a1.494 1.494 0 0 0-.439 1.061c0 .401.156.778.439 1.06a1.505 1.505 0 0 1 0 2.122c-.566.566-1.556.566-2.122 0-4.289-4.289-4.289-11.268 0-15.558C6.299 3.144 9.062 2 12 2s5.701 1.144 7.778 3.221c4.289 4.289 4.289 11.269 0 15.558zM16.243 10.05c.534 0 1.037-.208 1.413-.585.378-.377.586-.879.586-1.414 0-.535-.208-1.037-.586-1.413-.755-.757-2.074-.756-2.828-.001a1.983 1.983 0 0 0-.586 1.414c0 .535.208 1.037.586 1.414s.88.585 1.415.585zm-.708-2.706a.994.994 0 0 1 .708-.293.99.99 0 0 1 .707.294.99.99 0 0 1 .293.706.993.993 0 0 1-.293.707 1.023 1.023 0 0 1-1.414-.001.99.99 0 0 1-.293-.706.988.988 0 0 1 .292-.707zm4.525 4.595c-.567-.566-1.553-.566-2.122 0A1.502 1.502 0 0 0 19 14.5a1.502 1.502 0 0 0 1.06-2.561zm-.706 1.414a.512.512 0 0 1-.707 0 .5.5 0 1 1 .707 0zm-4.879 2.829a2.506 2.506 0 0 0 0 3.537c.472.472 1.1.731 1.768.731.668 0 1.296-.26 1.768-.731.472-.472.732-1.1.732-1.769 0-.668-.26-1.296-.732-1.768-.945-.944-2.593-.944-3.536 0zm2.828 2.829c-.565.566-1.556.566-2.121 0a1.503 1.503 0 0 1-.001-2.122 1.49 1.49 0 0 1 1.061-.439c.401 0 .777.156 1.06.439.283.283.44.66.44 1.061s-.156.778-.439 1.061zM8.819 5.575a1.981 1.981 0 0 0-.587 1.415c0 .534.208 1.036.586 1.412.377.378.879.587 1.414.587.535 0 1.037-.208 1.413-.586.378-.376.586-.878.587-1.412a1.99 1.99 0 0 0-.586-1.416c-.755-.756-2.072-.755-2.827 0zm2.119 2.121a1.02 1.02 0 0 1-1.413-.001.989.989 0 0 1-.293-.705.993.993 0 0 1 .293-.708.993.993 0 0 1 .707-.293.997.997 0 0 1 .706 1.707z"></path></svg>
+    <h3>Themes</h3>
+    <p>Create your design</p>
+                </a>
+                <a class="gh-developer-docs-item gh-developer-docs-core" href="https://github.com/TryGhost/Ghost/wiki/">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17.992 15.165L14.829 12l3.164-3.164a4.553 4.553 0 0 0 4.617-1.082c1.308-1.307 1.676-3.171.959-4.863a.5.5 0 0 0-.821-.152l-1.766 1.835h-1.408V3.012l1.769-1.768a.498.498 0 0 0-.159-.814c-1.664-.703-3.661-.318-4.939.961a4.481 4.481 0 0 0-1.083 4.616L12 9.171 8.836 6.008a4.476 4.476 0 0 0-1.082-4.616C6.446.083 4.584-.286 2.891.43a.5.5 0 0 0-.152.821l1.835 1.767v1.557H3.018L1.251 2.739a.5.5 0 0 0-.821.152 4.45 4.45 0 0 0 .96 4.9 4.474 4.474 0 0 0 4.618 1.065l3.158 3.149-3.159 3.16a4.552 4.552 0 0 0-4.617 1.081 4.48 4.48 0 0 0-.96 4.937.502.502 0 0 0 .814.159l1.768-1.767h1.563v1.408L2.739 22.75a.498.498 0 0 0 .152.82 4.437 4.437 0 0 0 4.899-.961c1.207-1.206 1.601-2.987 1.045-4.618L12 14.828l3.164 3.165a4.479 4.479 0 0 0 1.082 4.617 4.479 4.479 0 0 0 4.938.961.498.498 0 0 0 .159-.814l-1.769-1.767v-1.415h1.414l1.768 1.767a.502.502 0 0 0 .814-.159 4.484 4.484 0 0 0-.96-4.937 4.479 4.479 0 0 0-4.618-1.081zM6.486 7.92a.498.498 0 0 0-.548-.106c-1.329.562-2.837.275-3.84-.729a3.459 3.459 0 0 1-.973-3.034l1.319 1.371a.5.5 0 0 0 .36.153h2.27a.5.5 0 0 0 .5-.5v-2.27a.498.498 0 0 0-.153-.36L4.049 1.123c1.082-.189 2.18.156 2.998.976a3.482 3.482 0 0 1 .746 3.839.5.5 0 0 0 .107.548l3.392 3.392-1.419 1.42L6.486 7.92zm1.307 10.142c.566 1.337.288 2.845-.709 3.841a3.482 3.482 0 0 1-3.034.973l1.371-1.321a.498.498 0 0 0 .153-.36v-2.12a.5.5 0 0 0-.5-.5h-2.27a.496.496 0 0 0-.353.147l-1.324 1.323a3.481 3.481 0 0 1 .97-3.091 3.541 3.541 0 0 1 3.84-.746c.188.08.404.038.548-.107l9.611-9.614a.5.5 0 0 0 .107-.548 3.485 3.485 0 0 1 .748-3.839 3.53 3.53 0 0 1 3.092-.97L18.72 2.453a.499.499 0 0 0-.146.353v2.27a.5.5 0 0 0 .5.5h2.121a.498.498 0 0 0 .36-.153l1.32-1.372c.189 1.082-.155 2.179-.973 2.998a3.544 3.544 0 0 1-3.84.747.498.498 0 0 0-.548.107L7.9 17.514a.5.5 0 0 0-.107.548zm15.08 1.982l-1.324-1.323a.5.5 0 0 0-.354-.147h-2.121a.5.5 0 0 0-.5.5v2.122c0 .133.053.26.146.354l1.324 1.324a3.486 3.486 0 0 1-3.092-.97 3.485 3.485 0 0 1-.747-3.84.498.498 0 0 0-.107-.548l-3.393-3.394 1.415-1.415 3.392 3.394a.497.497 0 0 0 .548.107 3.482 3.482 0 0 1 3.84.746 3.478 3.478 0 0 1 .973 3.09z"></path></svg>
+    <h3>Core</h3>
+    <p>Help build Ghost</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gh-section gh-developer-slack-section">
+        <div class="inner">
+            <div class="gh-developer-slack">
+                <section class="gh-developer-slack-content">
+                    <img alt="Slack Logo" src="/images/developers/slack-logo-176x.png" srcset="/images/developers/slack-logo-176x.png 176w, /images/developers/slack-logo-352x.png 352w, /images/developers/slack-logo-528x.png 528w, /images/developers/slack-logo-704x.png 704w, /images/developers/slack-logo-880x.png 880w">
+
+    <p>Join our Slack community and chat with other Ghost developers from all over the world in real-time.</p>
+    <p>Yep. We really did just try to make instant messaging sound like some crazy awesome new-fangled thing.</p>
+
+                    <iframe src="https://slack.ghost.org/iframe" class="__slackin" style="border-width: 0px; width: 111px; height: 20px; visibility: visible;"></iframe>
+                </section>
+                <section class="gh-developer-blog">
+                    <a class="gh-developer-blog-header" href="http://dev.ghost.org" target="_blank">
+                        <div class="gh-developer-blog-heading">
+                            <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.5 1.993h-19a2.502 2.502 0 0 0-2.5 2.5v14c0 1.379 1.121 2.5 2.5 2.5h19c1.379 0 2.5-1.121 2.5-2.5v-14c0-1.379-1.121-2.5-2.5-2.5zm-20.5 6h22v6h-4.5a.501.501 0 0 0-.416.223l-1.488 2.232-2.636-6.152a.501.501 0 0 0-.876-.08l-3.473 5.209-1.647-4.117a.495.495 0 0 0-.412-.311.496.496 0 0 0-.468.22l-1.852 2.777H1V7.993zm1.5-5h19c.827 0 1.5.673 1.5 1.5v2.5H1v-2.5c0-.827.673-1.5 1.5-1.5zm19 17h-19c-.827 0-1.5-.673-1.5-1.5v-3.5h4.5a.501.501 0 0 0 .416-.223l1.473-2.209 1.647 4.117a.498.498 0 0 0 .88.092l3.488-5.232 2.636 6.152a.501.501 0 0 0 .414.301l.046.002a.5.5 0 0 0 .416-.223l1.852-2.777H23v3.5c0 .827-.673 1.5-1.5 1.5z"></path><circle cx="4" cy="4.993" r="1"></circle><circle cx="7" cy="4.993" r="1"></circle><circle cx="10" cy="4.993" r="1"></circle></svg> <h3>Dev Blog Updates</h3>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path fill="currentColor" d="M37.802 23.247l-26.286-23a1 1 0 0 0-1.317 1.506L35.624 24 10.199 46.247a1 1 0 1 0 1.317 1.506l26.286-23a1.001 1.001 0 0 0 0-1.506z"></path></svg>
+                    </a>
+                    <ul class="gh-developer-blog-posts">
+                        <li><a href="https://dev.ghost.org/ghost-0-11-9/" target="_blank"><div class="gh-developer-blog-post-title"><img src="//dev.ghost.org//content/images/2016/08/1160712.jpeg" alt:"katharina="" irrgang"=""><h4>Ghost 0.11.9</h4></div><span>16 May</span></a></li><li><a href="https://dev.ghost.org/ghost-0-11-8/" target="_blank"><div class="gh-developer-blog-post-title"><img src="//dev.ghost.org//content/images/2016/08/1160712.jpeg" alt:"katharina="" irrgang"=""><h4>Ghost 0.11.8</h4></div><span>18 Apr</span></a></li><li><a href="https://dev.ghost.org/ghost-1-progress/" target="_blank"><div class="gh-developer-blog-post-title"><img src="//dev.ghost.org//content/images/2014/Jul/2014cropped400.jpg" alt:"hannah="" wolfe"=""><h4>TWiG: Progress report on Ghost 1.0</h4></div><span>17 Mar</span></a></li><li><a href="https://dev.ghost.org/ghost-0-11-7/" target="_blank"><div class="gh-developer-blog-post-title"><img src="//dev.ghost.org//content/images/2014/Jul/2014cropped400.jpg" alt:"hannah="" wolfe"=""><h4>Ghost 0.11.7</h4></div><span>1 Mar</span></a>
+                    </li></ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <section class="gh-section gh-developer-projects-section">
+        <div class="inner">
+            <header class="gh-section-head">
+    <h2>Ghost Projects</h2>
+    <p>Our core repositories where the magic happens</p>
+            </header>
+            <div class="gh-developer-projects">
+                <a href="https://github.com/TryGhost/Ghost" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost</h4><p>A simple, powerful publishing platform</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.11.9</span><span class="gh-badge gh-badge-blue">Updated</span></div></a><a href="https://github.com/TryGhost/Casper" class="gh-developer-projects-item gh-developer-projects-purple"><h4>Casper</h4><p>The default personal blogging theme for Ghost</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v1.3.6</span></div></a><a href="https://github.com/TryGhost/Ghost-Desktop" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost-Desktop</h4><p>⚡️ Ghost for Desktops</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v1.2.1</span></div></a><a href="https://github.com/TryGhost/Ghost-Vagrant" class="gh-developer-projects-item gh-developer-projects-brown"><h4>Ghost-Vagrant</h4><p>Vagrant setup for developing Ghost</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a><a href="https://github.com/TryGhost/Ghost-Admin" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost-Admin</h4><p>Ghost Admin Client</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v1.0.0-alpha.20</span><span class="gh-badge gh-badge-blue">Updated</span></div></a><a href="https://github.com/TryGhost/Blog" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Blog</h4><p>The official Ghost blog theme</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a><a href="https://github.com/TryGhost/Ghost-Config" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost-Config</h4><p>Cross-platform meta data and configurations</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.3.3-azure</span></div></a><a href="https://github.com/TryGhost/Ghost-CLI" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost-CLI</h4><p>CLI Tool for installing &amp; updating Ghost</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v1.0.0-alpha.17</span></div></a><a href="https://github.com/TryGhost/Slimer" class="gh-developer-projects-item gh-developer-projects-yellow"><h4>Slimer</h4><p>A bot who lives in IRC</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a><a href="https://github.com/TryGhost/GQL" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>GQL</h4><p>Filter query language for working with Ghost's API</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.4</span></div></a><a href="https://github.com/TryGhost/Ghost-Editor" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ghost-Editor</h4><p>Ghost's Mobiledoc Editor</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.1.10</span></div></a><a href="https://github.com/TryGhost/knex-migrator" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>knex-migrator</h4><p>DB migration tool for knex</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v2.0.16</span></div></a><a href="https://github.com/TryGhost/gscan" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>gscan</h4><p>Ghost theme scanner - checks for errors and feature support</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v1.0.0</span></div></a><a href="https://github.com/TryGhost/wp-ghost-exporter" class="gh-developer-projects-item gh-developer-projects-blue"><h4>wp-ghost-exporter</h4><p>A WordPress plugin to export content to Ghost</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a><a href="https://github.com/TryGhost/passport-ghost" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>passport-ghost</h4><p>Passport adapter for logging in with Ghost.org</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v2.3.1</span></div></a><a href="https://github.com/TryGhost/DownloadCount" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>DownloadCount</h4><p>Download Counter Service</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.6</span></div></a><a href="https://github.com/TryGhost/Ignition" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>Ignition</h4><p>Basic configuration and tooling shared across applications</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a><a href="https://github.com/TryGhost/slackin" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>slackin</h4><p>Public Slack organizations made easy</p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.13.0</span></div></a><a href="https://github.com/TryGhost/maintenance-mode" class="gh-developer-projects-item gh-developer-projects-midgrey"><h4>maintenance-mode</h4><p></p><div class="gh-developer-projects-version"><span class="gh-developer-projects-version-number">v0.0.1</span></div></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="gh-section gh-developer-help-build">
+        <div class="inner">
+            <header class="gh-section-head">
+    <h2>Help us build Ghost</h2>
+    <p>Join an incredible group of contributors all over the world</p>
+            </header>
+            <div class="gh-contributors-container">
+                <ul class="gh-contributors">
+                    <li><a href="https://github.com/acburdine" target="_blank"><img alt="acburdine" title="acburdine" src="/images/contributors/acburdine-160x.jpg" srcset="/images/contributors/acburdine-160x.jpg 160w, /images/contributors/acburdine-240x.jpg 240w, /images/contributors/acburdine-320x.jpg 320w, /images/contributors/acburdine-400x.jpg 400w, /images/contributors/acburdine-80x.jpg 80w"></a></li>
+                    <li><a href="https://github.com/dbalders" target="_blank"><img alt="David Balderston" title="David Balderston" src="/images/contributors/dbalders-105x.jpg" srcset="/images/contributors/dbalders-105x.jpg 105w, /images/contributors/dbalders-158x.jpg 158w, /images/contributors/dbalders-210x.jpg 210w, /images/contributors/dbalders-263x.jpg 263w, /images/contributors/dbalders-53x.jpg 53w"></a></li>
+                    <li><a href="https://github.com/felixrieseberg" target="_blank"><img alt="Felix Rieseberg" title="Felix Rieseberg" src="/images/contributors/felixrieseberg-160x.jpg" srcset="/images/contributors/felixrieseberg-160x.jpg 160w, /images/contributors/felixrieseberg-240x.jpg 240w, /images/contributors/felixrieseberg-320x.jpg 320w, /images/contributors/felixrieseberg-400x.jpg 400w, /images/contributors/felixrieseberg-80x.jpg 80w"></a></li>
+                    <li><a href="https://github.com/jaswilli" target="_blank"><img alt="jaswilli" title="jaswilli" src="/images/contributors/jaswilli-160x.jpg" srcset="/images/contributors/jaswilli-160x.jpg 160w, /images/contributors/jaswilli-240x.jpg 240w, /images/contributors/jaswilli-320x.jpg 320w, /images/contributors/jaswilli-400x.jpg 400w, /images/contributors/jaswilli-80x.jpg 80w"></a></li>
+                    <li><a href="https://github.com/halfdan" target="_blank"><img alt="halfdan" title="halfdan" src="/images/contributors/halfdan-160x.jpg" srcset="/images/contributors/halfdan-160x.jpg 160w, /images/contributors/halfdan-240x.jpg 240w, /images/contributors/halfdan-320x.jpg 320w, /images/contributors/halfdan-400x.jpg 400w, /images/contributors/halfdan-80x.jpg 80w"></a></li>
+                    <li><a href="https://github.com/kevinkucharczyk" target="_blank"><img alt="kevinkucharczyk" title="kevinkucharczyk" src="/images/contributors/kevinkucharczyk-160x.jpg" srcset="/images/contributors/kevinkucharczyk-160x.jpg 160w, /images/contributors/kevinkucharczyk-240x.jpg 240w, /images/contributors/kevinkucharczyk-320x.jpg 320w, /images/contributors/kevinkucharczyk-400x.jpg 400w, /images/contributors/kevinkucharczyk-80x.jpg 80w"></a></li>
+                    <li><a href="https://github.com/mixonic" target="_blank"><img alt="mixonic" title="mixonic" src="/images/contributors/mixonic-160x.png" srcset="/images/contributors/mixonic-160x.png 160w, /images/contributors/mixonic-240x.png 240w, /images/contributors/mixonic-320x.png 320w, /images/contributors/mixonic-400x.png 400w, /images/contributors/mixonic-80x.png 80w"></a></li>
+                    <li><a href="https://github.com/rwjblue" target="_blank"><img alt="rwjblue" title="rwjblue" src="/images/contributors/rwjblue-120x.jpg" srcset="/images/contributors/rwjblue-120x.jpg 120w, /images/contributors/rwjblue-150x.jpg 150w, /images/contributors/rwjblue-30x.jpg 30w, /images/contributors/rwjblue-60x.jpg 60w, /images/contributors/rwjblue-90x.jpg 90w"></a></li>
+                    <li><a href="https://github.com/tgriesser" target="_blank"><img alt="tgriesser" title="tgriesser" src="/images/contributors/tgriesser-160x.png" srcset="/images/contributors/tgriesser-160x.png 160w, /images/contributors/tgriesser-240x.png 240w, /images/contributors/tgriesser-320x.png 320w, /images/contributors/tgriesser-400x.png 400w, /images/contributors/tgriesser-80x.png 80w"></a></li>
+                    <li><a href="https://github.com/bnookala" targeomt="_blank"><img alt="bnookala" title="bnookala" src="/images/contributors/bnookala-160x.jpg" srcset="/images/contributors/bnookala-160x.jpg 160w, /images/contributors/bnookala-240x.jpg 240w, /images/contributors/bnookala-320x.jpg 320w, /images/contributors/bnookala-400x.jpg 400w, /images/contributors/bnookala-80x.jpg 80w"></a></li>
+                </ul>
+                <div class="gh-section-cta gh-section-cta-contribute">
+                    <a class="gh-btn gh-btn-blue" href="https://github.com/TryGhost/Ghost/blob/master/.github/CONTRIBUTING.md" target="_blank"><span>Find out how you can help <svg viewBox="0 0 18 27" xmlns="http://www.w3.org/2000/svg"><path d="M2.397 25.426l13.143-11.5-13.143-11.5" stroke-width="3" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gh-section gh-devnewsletter-section">
+        <div class="inner">
+            <header class="gh-section-head">
+                <h2>Ghost Developer Notifications</h2>
+                <p>Our occasional announcements newsletter for developers</p>
+            </header>
+            <form class="gh-devnewsletter-form" action="//tryghost.createsend.com/t/t/s/tutj/" method="post">
+                <div class="gh-devnewsletter-form-container">
+                    <input class="gh-input" placeholder="Full name" id="fieldName" name="cm-name" type="text">
+                    <input class="gh-input" placeholder="Email address" id="fieldEmail" name="cm-tutj-tutj" type="email" required="">
+                    <button class="gh-btn gh-btn-green" type="submit"><span>Subscribe</span></button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
