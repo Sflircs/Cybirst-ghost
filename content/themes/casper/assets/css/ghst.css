@@ -3149,7 +3149,7 @@ fieldset[disabled] .gh-btn {
     height: 25px
 }
 .gh-foot-mast-text {
-    margin: 10px 0;
+    margin: 8px 0;
     color: #738a94;
     line-height: 1.5em
 }
@@ -5705,7 +5705,7 @@ pre[class*=language-] {
 }
 .gh-hero-developers .gh-subhead {
     margin: .3em auto 40px;
-    max-width: 600px;
+    max-width: 880px;
     font-size: 2rem;
     line-height: 1.4em;
     font-weight: 300
@@ -6122,7 +6122,7 @@ pre[class*=language-] {
 .gh-devnewsletter-form .gh-input {
     margin-right: 15px;
     padding: 11px 12px;
-    max-width: 400px
+    max-width: 245px
 }
 @media (max-width: 650px) {
     .gh-devnewsletter-form-container {
