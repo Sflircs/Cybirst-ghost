@@ -999,6 +999,23 @@ fieldset[disabled] .gh-btn {
     background: #97bc38;
     box-shadow: none
 }
+.gh-btn-orange {
+    padding: 1px;
+    border: 0;
+    color: #fff;
+    transition: none!important
+}
+.gh-btn-orange span {
+    background: #F44336;
+}
+.gh-btn-orange:active,
+.gh-btn-orange:focus {
+    background: #c91717;
+}
+.gh-btn-orange:active span,
+.gh-btn-orange:focus span {
+    background: #c91717;
+}
 .gh-btn-red {
     padding: 1px;
     border: 0;
@@ -5684,7 +5701,7 @@ pre[class*=language-] {
     padding: 0
 }
 .gh-hero-developers {
-    height: auto
+    height: 90vh;
 }
 .gh-hero-developers .gh-subhead {
     margin: .3em auto 40px;
@@ -5838,8 +5855,15 @@ pre[class*=language-] {
     }
 }
 .gh-developer-slack-section {
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, .98), hsla(0, 0%, 100%, .9) 70%, hsla(0, 0%, 100%, .8)), url(/images/developers/slack-bg.png) 50%/35%
+    background: url(https://cdn.sstatic.net/Sites/aviation/img/header.svg);
+    /*-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";*/
 }
+
 .gh-developer-slack {
     display: -ms-flexbox;
     display: flex;
