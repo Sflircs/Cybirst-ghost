@@ -1,0 +1,13 @@
+.x-right:hover polyline,
+.x-right:focus polyline {
+  stroke-width: 12;
+}
+
+.x-right:active polyline {
+  stroke-width: 12;
+  transition: all 100ms ease-in-out;
+}
+
+polyline {
+  transition: all 250ms ease-in-out;
+}
